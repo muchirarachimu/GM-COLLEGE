@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+      <head>
+          <!----responsive enhaning link-->
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <!--font awesome link-->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <!---google fonts Parisienne-->
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+        <title>Vision</title>
+        <style>
+            * {
+              box-sizing: border-box;
+              }
+            body {
+              font-family: Helvetica;
+              margin: 1px;
+              padding:1px;
+              background-color:aquamarine;
+            }
+          /*Navigation bar*/
+            .topnav {
+              padding: 5px 5px;
+              background-color: blue;
+              overflow: hidden;
+            }
+
+            .topnav a {
+              display: block;
+              float: left;
+              text-decoration: none;
+              text-align: center;
+              color: #f2f2f2;
+              font-size: 15px;
+              padding: 10px 14px; 
+            }
+
+            .active {
+              background-color:red;
+              color: white;
+            }
+
+            .topnav img{
+              width:20px;
+              height:20px;
+              float:left;
+              padding: 2px 2px;
+              height: 17px;
+            }
+
+            .dropdown {
+              float: left;
+              overflow: hidden;
+              min-width: 50px;
+            }
+
+            .dropdown .dropbtn {
+              background-color: inherit;
+              font-family: inherit;
+              color: white;
+              font-size: 15px;    
+              border:none;
+              outline: none;
+              padding: 10px 14px;
+              margin: 0;
+              min-width: 50px;
+            }
+
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color:gold;
+              min-width: 50px;
+              box-shadow: 0px 8px 16px 0px rgba(0,5,0,0.2);
+              z-index: 1;
+            }
+
+            .dropdown-content a {
+              display: block;
+              float: none;
+              text-align: left;
+              text-decoration: none;
+              color: black;
+              padding: 12px 16px; 
+            }
+
+            .topnav a:hover, .dropdown:hover .dropbtn {
+              background-color:hotpink;
+              color: white;
+            }
+
+            .dropdown-content a:hover {
+              background-color: hotpink;
+              color: white;
+            }
+
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+
+            .logo img{
+              width:120px;
+              height:120px;
+              float:right;
+            }
+
+            .logo p  {
+              text-align: center;
+              font-size: 50px;
+              font-weight: bolder;
+              color: red;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+          /*banner*/
+            .banner {
+              background-image:
+              url(images/GMcollege.jpg);
+              background-size: cover;
+              height: 70vh;
+            }
+
+            .banner h1{
+              color: gold;
+              text-align: center;
+              font-family:Parisienne;
+              font-size: 60px;
+              padding-top: 40px;
+            }
+            h3{
+color:red;
+font-family: Arial;
+text-align: center;
+
+}
+p{
+text-align: center;
+color: blue;
+font-family:Verdana;
+}
+            
+            /* Footer */
+            .footer {
+              padding: 20px;
+              text-align: center;
+              background: #ddd;
+              padding-left: 5px;
+              padding-right: 10px;
+            }
+
+            .footer{
+              color:white;
+              font-size: 14px;
+              background-color: blue;
+            }
+
+            .footer a{
+              color:gold;
+            }
+            .footer h2, .footer p{
+              color: white;
+            }
+
+            .fa {
+              padding: 10px;
+              font-size: 20px;
+              width: 40px;
+              text-align: center;
+              text-decoration: none;
+              margin: 5px 5px;
+              border-radius: 50%;
+            }
+
+            .fa:hover {
+              opacity: 0.7;
+            }
+
+            .fa-facebook {
+              background: #3B5998;
+              color: white;
+            }
+
+            .fa-twitter {
+              background: #55ACEE;
+              color: white;
+            }
+
+            .fa-google {
+              background: #dd4b39;
+              color: white;
+            }
+
+            .fa-linkedin {
+              background: #007bb5;
+              color: white;
+            }
+
+            .fa-youtube {
+              background: #bb0000;
+              color: white;
+            }
+
+            .fa-instagram {
+              background: #125688;
+              color: white;
+            }
+        </style>
+        </head>
+  <body>
+<!-----Navigation bar-->
+      <div class="topnav" id="myTopnav">
+        <a href="homepage.html"><img src="images/logo.png"></a>
+        <a href="homepage.html" class="active">HOME</a>
+          <div class="dropdown">
+            <button class="dropbtn">ABOUT US</button>
+            <div class="dropdown-content">
+              <a href="vision.html">VISION</a>
+              <a href="corevalues.html">CORE VALUES</a>
+            </div>
+          </div> 
+        <a href="mission.html">MISSION</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="contacts.html">CONTACT US</a>
+      </div>
+<!----logo-->
+      <div class="logo">
+        <a href="homepage.html"><img src="images/logo.png"></a>
+        <p>WELCOME TO <br>GM OPTIPEX TECHNICAL COLLEGE </p>
+      </div>
+
+<!---banner-->
+      <div class="banner">
+        <h1>Turning Passion into Reality</h1>  
+      </div>
+
+      <h3>OUR VISION</h3>
+      <P>To be a leader in Talent Development through Science and Technology</P>
+      <h3>WHO WE ARE</h3>
+      <P>GM OPTIPEX TECHNICAL COLLEGE is a private Kenyan technical University. Our main objective is to bridge the gap in ensuring that the youths are fully equipped with professional skills in science and Technology particularly in computing and informatics so that they are able to be self reliant in a sustainable manner  as well as contributing to the social and economic development of the country. The university was founded in 2015 and is accredited by The Commission for University Education (CUE).</P>
+
+  <!---footer-->
+      <div class="footer">
+          <h2>Social Links</h2>
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-google"></a>
+              <a href="#" class="fa fa-linkedin"></a>
+              <a href="#" class="fa fa-youtube"></a>
+              <a href="#" class="fa fa-instagram"></a>
+          <p>Copyright @2022 All Rights Reserved by:<a href="homepage.html">GM Optipex Technical College</a></p>
+      </div>
+  </body>
+</html>

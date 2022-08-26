@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+      <head>
+          <!----responsive enhaning link-->
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <!--font awesome link-->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <!---google fonts Parisienne-->
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+        <title>Contacts</title>
+        <style>
+            * {
+              box-sizing: border-box;
+              }
+            body {
+              font-family: Helvetica;
+              margin: 1px;
+              padding:1px;
+              background-color:aquamarine;
+            }
+          /*Navigation bar*/
+            .topnav {
+              padding: 5px 5px;
+              background-color: blue;
+              overflow: hidden;
+            }
+
+            .topnav a {
+              display: block;
+              float: left;
+              text-decoration: none;
+              text-align: center;
+              color: #f2f2f2;
+              font-size: 15px;
+              padding: 10px 14px; 
+            }
+
+            .active {
+              background-color:red;
+              color: white;
+            }
+
+            .topnav img{
+              width:20px;
+              height:20px;
+              float:left;
+              padding: 2px 2px;
+              height: 17px;
+            }
+
+            .dropdown {
+              float: left;
+              overflow: hidden;
+              min-width: 50px;
+            }
+
+            .dropdown .dropbtn {
+              background-color: inherit;
+              font-family: inherit;
+              color: white;
+              font-size: 15px;    
+              border:none;
+              outline: none;
+              padding: 10px 14px;
+              margin: 0;
+              min-width: 50px;
+            }
+
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color:gold;
+              min-width: 50px;
+              box-shadow: 0px 8px 16px 0px rgba(0,5,0,0.2);
+              z-index: 1;
+            }
+
+            .dropdown-content a {
+              display: block;
+              float: none;
+              text-align: left;
+              text-decoration: none;
+              color: black;
+              padding: 12px 16px; 
+            }
+
+            .topnav a:hover, .dropdown:hover .dropbtn {
+              background-color:hotpink;
+              color: white;
+            }
+
+            .dropdown-content a:hover {
+              background-color: hotpink;
+              color: white;
+            }
+
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+
+            .logo img{
+              width:120px;
+              height:120px;
+              float:right;
+            }
+
+            .logo p  {
+              text-align: center;
+              font-size: 50px;
+              font-weight: bolder;
+              color: red;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+          /*banner*/
+            .banner {
+              background-image:
+              url(images/GMcollege.jpg);
+              background-size: cover;
+              height: 70vh;
+            }
+
+            .banner h1{
+              color: gold;
+              text-align: center;
+              font-family:Parisienne;
+              font-size: 60px;
+              padding-top: 40px;
+            }
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: aquamarine;
+  padding: 10px;
+}
+            .container h2{
+color: red;
+font-family: Arial;
+text-align: center;
+font-size: 30px;
+
+}
+.container address{
+color: blue;
+font-family: arial;
+text-align: center;
+font-size: 20px;
+font-weight: ;
+
+}
+.container p{
+color: blue;
+font-family: arial;
+text-align: center;
+font-size: 20px;
+font-weight: ;
+
+}
+.container hr{
+width:80%;
+
+}
+input[type=text], select, textarea {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: red;
+}
+input[type=reset] {
+  background-color:blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: red;
+}
+
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column h2{
+text-align: center;
+color: red;
+font-family: Arial;
+font-size: 20px;
+
+}
+form{
+ margin-left: 120px;
+}
+
+         /* Footer */
+            .footer {
+              padding: 20px;
+              text-align: center;
+              background: #ddd;
+              padding-left: 5px;
+              padding-right: 10px;
+            }
+
+            .footer{
+              color:white;
+              font-size: 14px;
+              background-color: blue;
+            }
+
+            .footer a{
+              color:gold;
+            }
+
+            .fa {
+              padding: 10px;
+              font-size: 20px;
+              width: 40px;
+              text-align: center;
+              text-decoration: none;
+              margin: 5px 5px;
+              border-radius: 50%;
+            }
+
+            .fa:hover {
+              opacity: 0.7;
+            }
+
+            .fa-facebook {
+              background: #3B5998;
+              color: white;
+            }
+
+            .fa-twitter {
+              background: #55ACEE;
+              color: white;
+            }
+
+            .fa-google {
+              background: #dd4b39;
+              color: white;
+            }
+
+            .fa-linkedin {
+              background: #007bb5;
+              color: white;
+            }
+
+            .fa-youtube {
+              background: #bb0000;
+              color: white;
+            }
+
+            .fa-instagram {
+              background: #125688;
+              color: white;
+            }
+        </style>
+        </head>
+  <body>
+<!-----Navigation bar-->
+      <div class="topnav" id="myTopnav">
+        <a href="homepage.html"><img src="images/logo.png"></a>
+        <a href="homepage.html" class="active">HOME</a>
+          <div class="dropdown">
+            <button class="dropbtn">ABOUT US</button>
+            <div class="dropdown-content">
+              <a href="vision.html">VISION</a>
+              <a href="corevalues.html">CORE VALUES</a>
+            </div>
+          </div> 
+        <a href="mission.html">MISSION</a>
+        <a href="gallery.html">GALLERY</a> 
+        <a href="contacts.html">CONTACT US</a>
+      </div>
+<!----logo-->
+      <div class="logo">
+        <a href="homepage.html"><img src="images/logo.png"></a>
+        <p>WELCOME TO <br>GM OPTIPEX TECHNICAL COLLEGE </p>
+      </div>
+
+<!---banner-->
+      <div class="banner">
+        <h1>Turning Passion into Reality</h1>  
+      </div>
+
+      <div class="container">
+        <h2>CONTACT</h2>
+        <hr>
+        <address>
+        <strong>GM OPTIPEX TECHNICAL COLLEGE</strong><br>
+        General Kago Road, Thika<br>P.O. Box 258963 <br>Thika 01000<br>Kenya
+        </address>
+        <p><b>Phone:</b> +254 (0) 722 123456<br><b>Phone:</b>+254 (0) 733 123456</p>
+        <hr>
+      </div>
+
+      
+  
+      <!---row column section-->
+      <div class="row">
+        <div class="column">
+          <h2>LEAVE A COMMENT</h2>
+          <form action="/action_page.php">
+            <label for="fname">First Name</label> <br>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name..."> <br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..."><br>
+            <label for="country">Your County</label><br>
+            <select id="county" name="county"><br>
+              <option value="nairobi">Nairobi</option>
+              <option value="kiambu">Kiambu</option>
+              <option value="murang'a">Murang'a</option>
+            </select><br>
+            <label for="subject">Subject</label><br>
+            <textarea id="subject" name="subject" placeholder="Write here.." style="height:170px"></textarea><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+    
+          </form>
+        </div>
+        <div class="column">
+            <!----google map-->
+            <h2>MAP</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7978.318477631103!2d37.07706817151006!3d-1.0414456698647003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x182f4e5b27c66117%3A0xb6f8a7e126152c26!2sThika!3m2!1d-1.0387568999999999!2d37.0833753!4m5!1s0x182f4ef517d2dd15%3A0x8e7d07383daf5916!2sMount%20Kenya%20University%2C%20General%20Kago%20Road%2C%20Thika!3m2!1d-1.044816!2d37.082363699999995!5e0!3m2!1sen!2ske!4v1647787570142!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>        </div>
+      </div>
+  <!---footer-->
+      <div class="footer">
+          <h2>Social Links</h2>
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-google"></a>
+              <a href="#" class="fa fa-linkedin"></a>
+              <a href="#" class="fa fa-youtube"></a>
+              <a href="#" class="fa fa-instagram"></a>
+          <p>Copyright @2022 All Rights Reserved by:<a href="homepage.html">GM Optipex Technical College</a></p>
+      </div>
+  </body>
+</html>
